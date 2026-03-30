@@ -3,7 +3,6 @@
 A clean, modular Hyprland base config to get you up and running fast. The default `hyprland.conf` is split into separate files so everything is easy to find and edit.
 
 ## Structure
-
 ```
 hypr/.config/hypr/
 ├── hyprland.conf       # sources all files below
@@ -15,6 +14,9 @@ hypr/.config/hypr/
 ├── permissions.conf    # portal and security settings
 ├── rules.conf          # window rules
 └── styling.conf        # gaps, borders, colors, animations
+
+alacritty/.config/alacritty/
+└── alacritty.toml      # terminal config, sets Fish as default shell
 ```
 
 ## Install
@@ -27,7 +29,8 @@ bash install.sh
 
 After install, edit `monitors.conf` to match your display setup if needed. Everything else works out of the box.
 
-> The only opinionated choice this config makes is **Alacritty** as the terminal running **Fish** shell. Both can be swapped out easily in `env.conf` and `autostart.conf`. 
+> [!NOTE]
+> The only opinionated choice this config makes is **Alacritty** as the terminal running **Fish** shell. Both can be swapped out easily in `env.conf` and `alacritty.toml`. 
 
 ## Managing config files
 
