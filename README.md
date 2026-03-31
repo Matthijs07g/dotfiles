@@ -1,4 +1,8 @@
 # dotfiles-base
+
+> [!CAUTION]
+> This repo is still a WIP. So some things will be missing or not finished.
+
 A clean, modular Hyprland base config to get you up and running fast. The default `hyprland.conf` is split into separate files so everything is easy to find and edit.
 
 ## Structure
