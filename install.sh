@@ -15,7 +15,8 @@ fi
 echo "Installing packages..."
 sudo pacman -S --needed \
     hyprland alacritty fish \
-    stow git
+    stow git \
+    spotify-launcher discord
 
 echo "Stowing dotfiles..."
 PACKAGES=(hypr alacritty mako)
