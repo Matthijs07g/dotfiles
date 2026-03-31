@@ -29,6 +29,7 @@ git clone https://github.com/Matthijs07g/dotfiles-base ~/dotfiles
 cd ~/dotfiles
 bash install.sh
 ```
+> The install script uses pacman to install hyprland, alacritty, fish, stow and git.
 
 After install, edit `monitors.conf` to match your display setup if needed. Everything else works out of the box.
 
