@@ -73,10 +73,10 @@ bash update.sh
 
 It would be wise to finish the setup for a minimal Hyprland install. The following are missing, ones marked with * are necessary for a working system:
 
-- Authentication agent*
-- Notification daemon*
-- Pipewire*
-- XDG Desktop Portal*
+- Authentication agent* -> hyprpolkitagent
+- Notification daemon* -> mako
+- Pipewire* -> pipewire + wireplumber + pipewire-pulse
+- XDG Desktop Portal* 
 - File manager*
 - Clipboard*
 - Wallpaper
