@@ -82,3 +82,4 @@ It would be wise to finish the setup for a minimal Hyprland install. The followi
 - Wallpaper
 - Application launcher
 - Status bar
+- Display manager -> SDDM

@@ -21,11 +21,14 @@ sudo pacman -S --needed \
     pipewire wireplumber pipewire-pulse \
     xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
     yazi eza ttf-jetbrains-mono-nerd \
+    keychain sddm
 
 echo "Starting services..."
 systemctl --user enable --now \
 	hyprpolkitagent \
-	pipewire pipewire-pulse wireplumber 
+	pipewire pipewire-pulse wireplumber \
+
+sudo systemctl enable sddm
 
 echo "Stowing dotfiles..."
 PACKAGES=(hypr alacritty mako yazi fish)
