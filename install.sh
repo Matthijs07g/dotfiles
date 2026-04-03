@@ -19,8 +19,8 @@ sudo pacman -S --needed \
     spotify-launcher discord \
     hyprpolkitagent mako\
     pipewire wireplumber pipewire-pulse \
-    xdg-desktop-portal-hyprland xdg-desktop-portal-gtk\
-    yazi
+    xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
+    yazi eza ttf-jetbrains-mono-nerd \
 
 echo "Starting services..."
 systemctl --user enable --now \
@@ -28,7 +28,7 @@ systemctl --user enable --now \
 	pipewire pipewire-pulse wireplumber 
 
 echo "Stowing dotfiles..."
-PACKAGES=(hypr alacritty mako yazi)
+PACKAGES=(hypr alacritty mako yazi fish)
 for package in "${PACKAGES[@]}"; do
     rm -rf ~/.config/$package
     stow --target="$HOME" "$package"

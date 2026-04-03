@@ -1,3 +1,6 @@
 [terminal]
 [terminal.shell]
 program = "/usr/bin/fish"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
