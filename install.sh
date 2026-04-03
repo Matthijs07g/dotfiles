@@ -16,10 +16,19 @@ echo "Installing packages..."
 sudo pacman -S --needed \
     hyprland alacritty fish \
     stow git \
-    spotify-launcher discord
+    spotify-launcher discord \
+    hyprpolkitagent mako\
+    pipewire wireplumber pipewire-pulse \
+    xdg-desktop-portal-hyprland xdg-desktop-portal-gtk\
+    yazi
+
+echo "Starting services..."
+systemctl --user enable --now \
+	hyprpolkitagent \
+	pipewire pipewire-pulse wireplumber 
 
 echo "Stowing dotfiles..."
-PACKAGES=(hypr alacritty mako)
+PACKAGES=(hypr alacritty mako yazi)
 for package in "${PACKAGES[@]}"; do
     rm -rf ~/.config/$package
     stow --target="$HOME" "$package"

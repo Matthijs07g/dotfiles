@@ -76,8 +76,8 @@ It would be wise to finish the setup for a minimal Hyprland install. The followi
 - Authentication agent* -> hyprpolkitagent
 - Notification daemon* -> mako
 - Pipewire* -> pipewire + wireplumber + pipewire-pulse
-- XDG Desktop Portal* 
-- File manager*
+- XDG Desktop Portal* xdg-desktop-portal-hyprland 
+- File manager* yazi
 - Clipboard*
 - Wallpaper
 - Application launcher

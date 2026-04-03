@@ -3,7 +3,7 @@
 set -e
 
 echo "Restowing dotfiles..."
-PACKAGES=(hypr alacritty mako)
+PACKAGES=(hypr alacritty mako yazi)
 for package in "${PACKAGES[@]}"; do
     stow --restow --target="$HOME" "$package"
 done
