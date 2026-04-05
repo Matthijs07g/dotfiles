@@ -14,14 +14,16 @@ fi
 
 echo "Installing packages..."
 sudo pacman -S --needed \
-    hyprland alacritty fish \
+    hyprland alacritty \
+    zsh zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search \
     stow git \
     spotify-launcher discord \
     hyprpolkitagent mako\
     pipewire wireplumber pipewire-pulse \
     xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
     yazi eza ttf-jetbrains-mono-nerd \
-    keychain sddm
+    keychain sddm cliphist wl-clipboard \
+    wofi starship
 
 echo "Starting services..."
 systemctl --user enable --now \
@@ -31,7 +33,7 @@ systemctl --user enable --now \
 sudo systemctl enable sddm
 
 echo "Stowing dotfiles..."
-PACKAGES=(hypr alacritty mako yazi fish)
+PACKAGES=(hypr alacritty mako yazi zsh wofi starship)
 for package in "${PACKAGES[@]}"; do
     rm -rf ~/.config/$package
     stow --target="$HOME" "$package"

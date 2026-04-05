@@ -1,0 +1,50 @@
+#   _____ __                  __    _     
+#  / ___// /_____ ___________/ /_  (_)___ 
+#  \__ \/ __/ __ `/ ___/ ___/ __ \/ / __ \
+# ___/ / /_/ /_/ / /  (__  ) / / / / /_/ /
+#/____/\__/\__,_/_/  /____/_/ /_/_/ .___/ 
+#                                /_/      
+#
+# Docs: https://starship.rs/config/
+
+format = "$username$hostname$directory$git_branch$git_status$character"
+
+[username]
+format = "[$user]($style)"
+show_always = true
+style_user = "blue"
+
+[hostname]
+format = "[@$hostname ]($style)"
+ssh_only = false
+style = "blue"
+
+[directory]
+format = "[$path ]($style)"
+style = "green"
+truncation_length = 3
+
+[git_branch]
+format = "[$symbol$branch ]($style)"
+style = "yellow"
+
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+style = "red"
+
+[character]
+success_symbol = "[❯](white)"
+error_symbol = "[❯](red)"
+
+# Disable unused modules
+[python]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[rust]
+disabled = true
+
+[package]
+disabled = true
