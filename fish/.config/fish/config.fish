@@ -5,6 +5,6 @@ if status is-interactive
 	alias la="eza --icons -la -1"
 	alias lt="eza --icons --tree -1"
 	if test -f ~/.ssh/github
-		keychain --eval --quiet ~/.ssh/github | source
+		keychain --eval --quiet --fish ~/.ssh/github | source
 	end
 end
