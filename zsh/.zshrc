@@ -1,3 +1,10 @@
+# _____  _____ __  __
+#/__  / / ___// / / /
+#  / /  \__ \/ /_/ / 
+# / /_____/ / __  /  
+#/____/____/_/ /_/   
+                    
+
 # Plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

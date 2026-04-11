@@ -23,7 +23,7 @@ sudo pacman -S --needed \
     xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
     yazi eza ttf-jetbrains-mono-nerd \
     keychain sddm cliphist wl-clipboard \
-    wofi starship
+    wofi starship quickshell
 
 echo "Starting services..."
 systemctl --user enable --now \
@@ -33,7 +33,7 @@ systemctl --user enable --now \
 sudo systemctl enable sddm
 
 echo "Stowing dotfiles..."
-PACKAGES=(hypr alacritty mako yazi zsh wofi starship)
+PACKAGES=(hypr alacritty mako yazi zsh wofi starship quickshell)
 for package in "${PACKAGES[@]}"; do
     rm -rf ~/.config/$package
     stow --target="$HOME" "$package"
