@@ -1,0 +1,7 @@
+Todo:
+
+Battery connected devices
+CPU usage
+Memory usage
+Storage usage?
+VPN
