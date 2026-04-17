@@ -2,6 +2,7 @@ import Quickshell
 import "./datetime"
 import QtQuick
 import "./usage"
+import "./battery"
 
 Scope{
   Variants {
@@ -37,6 +38,7 @@ Scope{
         spacing: 20
 
         UsageWidget {}
+        BatteryWidget {}
         ClockWidget {}
       }
     }

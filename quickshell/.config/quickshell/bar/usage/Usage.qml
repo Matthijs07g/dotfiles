@@ -3,11 +3,13 @@ pragma Singleton
 import Quickshell
 import Quickshell.Io
 import QtQuick
+import Quickshell.Services.UPower
 
 Singleton {
     id: root
     property string cpu: "0%"
     property string memory: "0%"
+    property string batter: "100%"
 
     Process {
         command: ["bash", "-c", "vmstat 2 | stdbuf -oL awk 'NR>2 {print 100-$15\"%\"}'"]
