@@ -6,3 +6,4 @@ Scope{
   Bar {}
   Wallpaper {}
 }
+
