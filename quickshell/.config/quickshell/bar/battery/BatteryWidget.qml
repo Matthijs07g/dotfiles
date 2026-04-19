@@ -8,10 +8,10 @@ Item {
     implicitWidth: row.implicitWidth
 
     readonly property var upower: UPowerService
-    readonly property var battery: upower.devices.find(d => d.type === "Battery")
+    readonly property var battery: upower.devices ? upower.devices.find(d => d.type === UPowerService.UPowerDeviceType.Battery) : null
 
     function icon(p, charging, isLaptop) {
-        if (!isLaptop) return "󰍹"   // desktop icon
+        if (!isLaptop) return "󰍹" 
 
         if (charging) return ""
 
@@ -36,7 +36,7 @@ Item {
                 battery ? battery.charging : false,
                 isLaptop
             )
-            
+
             font.bold: true
             font.family: "JetBrainsMono Nerd Font"
             font.pixelSize: 16
@@ -48,7 +48,7 @@ Item {
         Text {
             text: isLaptop && battery
                 ? Math.round(battery.percentage) + "%"
-                : ""   // no percentage on desktop
+                : "" 
 
             font.pixelSize: 14
             font.bold: true

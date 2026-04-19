@@ -1,8 +1,9 @@
 import Quickshell
-import "./datetime"
 import QtQuick
+import "./datetime"
 import "./usage"
 import "./battery"
+import "./powermenu"
 
 Scope{
   Variants {
@@ -40,6 +41,7 @@ Scope{
         UsageWidget {}
         BatteryWidget {}
         ClockWidget {}
+        PowerMenu {}
       }
     }
   }
