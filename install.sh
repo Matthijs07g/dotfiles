@@ -17,6 +17,7 @@ sudo pacman -S --needed \
     hyprland alacritty \
     zsh zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search \
     stow git \
+    spotify-launcher \
     hyprpolkitagent mako\
     pipewire wireplumber pipewire-pulse \
     xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \

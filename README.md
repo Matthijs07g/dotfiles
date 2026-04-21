@@ -3,6 +3,18 @@
 > [!CAUTION]
 > This repo is still a WIP. So some things will be missing or not finished.
 
+## To Do:
+- Workspaces — easiest, fully native
+    Quickshell has Quickshell.Hyprland built in with HyprlandWorkspace which gives you workspace info per monitor natively.
+- Volume — fully native via Pipewire module
+    Quickshell has Quickshell.Services.Pipewire built in which gives you direct access to audio nodes, volumes and mute states without running any processes.
+- Bluetooth — fully native module
+    Quickshell has a built in Quickshell.Bluetooth module which makes this much easier than network. You get devices, connection state and can connect/disconnect natively.
+- Network — needs process parsing
+    Quickshell doesn't have a built in network module so you'd use nmcli via a Process to get connections and toggle them. It's doable but requires parsing nmcli output.
+- VPN — most complex, consider leaving for later
+    This is more complex — strongSwan uses swanctl or ipsec commands. You'd run those via Process and parse the output. Setting up new VPNs from the bar would be very complex to build from scratch
+
 A clean, modular Hyprland base config to get you up and running fast. The default `hyprland.conf` is split into separate files so everything is easy to find and edit.
 
 ## Structure
