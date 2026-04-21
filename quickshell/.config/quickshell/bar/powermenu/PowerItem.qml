@@ -19,7 +19,7 @@ Item {
         Text {
             text: icon
             color: "#ffffff"
-            font.pixelSize: 16
+            font.pixelSize: 15
         }
 
         Text {
