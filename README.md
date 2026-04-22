@@ -4,7 +4,7 @@
 > This repo is still a WIP. So some things will be missing or not finished.
 
 ## To Do:
-- Workspaces — easiest, fully native
+- DONE -- Workspaces — easiest, fully native 
     Quickshell has Quickshell.Hyprland built in with HyprlandWorkspace which gives you workspace info per monitor natively.
 - Volume — fully native via Pipewire module
     Quickshell has Quickshell.Services.Pipewire built in which gives you direct access to audio nodes, volumes and mute states without running any processes.
