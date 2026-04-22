@@ -6,20 +6,16 @@ Row {
     id: space
     property var screen
 
-    spacing: 6
+    spacing: 1
 
     Repeater {
         model: Hyprland.workspaces.values
         delegate: WorkspaceItem {
             required property int id
-            property bool active: true
+            property bool active: Hyprland.monitors.values.find(m => m.name === space.screen.name)?.activeWorkspace.id === id
             workspaceId: id
             isActive: active
         }
-    }
-
-    Component.onCompleted: {
-        console.log(Hyprland.monitors.values)
     }
 }
 

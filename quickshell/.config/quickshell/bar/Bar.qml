@@ -28,6 +28,10 @@ Scope{
         anchors.fill: parent
         color: Qt.rgba(255, 255, 255, 0.06)
         radius: 13
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: Qt.rgba(1, 1, 1, 0.10) }
+            GradientStop { position: 1.0; color: Qt.rgba(1, 1, 1, 0.05) }
+        }
       }
 
       DateWidget {
