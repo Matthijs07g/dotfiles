@@ -31,28 +31,28 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
 
         Text {
-            text: icon(
-                battery ? battery.percentage : 100,
-                battery ? battery.charging : false,
-                isLaptop
+            text: root.icon(
+                root.battery ? root.battery.percentage : 100,
+                root.battery ? root.battery.charging : false,
+                root.isLaptop
             )
 
             font.bold: true
             font.family: "JetBrainsMono Nerd Font"
             font.pixelSize: 16
-            color: isLaptop && battery && battery.percentage < 20
+            color: root.isLaptop && root.battery && root.battery.percentage < 20
                 ? "#ff5555"
                 : "white"
         }
 
         Text {
-            text: isLaptop && battery
-                ? Math.round(battery.percentage) + "%"
+            text: root.isLaptop && root.battery
+                ? Math.round(root.battery.percentage) + "%"
                 : "" 
 
             font.pixelSize: 14
             font.bold: true
-            color: isLaptop && battery && battery.percentage < 20
+            color: root.isLaptop && root.battery && root.battery.percentage < 20
                 ? "#ff5555"
                 : "white"
         }

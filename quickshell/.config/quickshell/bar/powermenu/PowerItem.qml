@@ -17,13 +17,13 @@ Item {
         spacing: 8
 
         Text {
-            text: icon
+            text: root.icon
             color: "#ffffff"
             font.pixelSize: 15
         }
 
         Text {
-            text: label
+            text: root.label
             color: "#ffffff"
             font.pixelSize: 14
         }
