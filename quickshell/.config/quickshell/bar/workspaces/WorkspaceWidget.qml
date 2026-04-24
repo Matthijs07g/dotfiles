@@ -6,7 +6,7 @@ Row {
     id: space
     property var screen
 
-    spacing: 1
+    spacing: 3
 
     Repeater {
         model: Hyprland.workspaces.values

@@ -14,6 +14,7 @@
     Quickshell doesn't have a built in network module so you'd use nmcli via a Process to get connections and toggle them. It's doable but requires parsing nmcli output.
 - VPN — most complex, consider leaving for later
     This is more complex — strongSwan uses swanctl or ipsec commands. You'd run those via Process and parse the output. Setting up new VPNs from the bar would be very complex to build from scratch
+- SSH keymanager
 
 A clean, modular Hyprland base config to get you up and running fast. The default `hyprland.conf` is split into separate files so everything is easy to find and edit.
 

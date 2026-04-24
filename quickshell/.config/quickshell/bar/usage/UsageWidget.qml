@@ -11,15 +11,18 @@ Row {
             anchors.verticalCenter: parent.verticalCenter
             text: " "
             scale: 1.2
-            color: "white"
+            color: "#c084fc"
+            font.family: "JetBrainsMono Nerd Font"
         }
 
         Text {
             anchors.verticalCenter: parent.verticalCenter
             text: Usage.cpu
-            color: "white"
+            color: "#ffffff"
             scale: 1.2
             font.bold: true
+            font.family: "JetBrainsMono Nerd Font"
+            opacity: 0.8
         }
     }
     
@@ -30,15 +33,18 @@ Row {
             anchors.verticalCenter: parent.verticalCenter
             text: " "
             scale: 1.2
-            color: "white"
+            color: "#c084fc"
+            font.family: "JetBrainsMono Nerd Font"
         }
 
         Text{
             anchors.verticalCenter: parent.verticalCenter
             text: Usage.memory
-            color: "white"
+            color: "#ffffff"
             scale: 1.2
             font.bold: true
+            font.family: "JetBrainsMono Nerd Font"
+            opacity:0.8
         }
     }
 }

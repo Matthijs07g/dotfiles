@@ -6,4 +6,5 @@ Text {
     color: "white"
     font.bold: true
     opacity: 0.9
+    font.family: "JetBrainsMono Nerd Font"
 }

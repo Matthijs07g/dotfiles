@@ -40,9 +40,10 @@ Item {
             font.bold: true
             font.family: "JetBrainsMono Nerd Font"
             font.pixelSize: 16
+            opacity: 0.8
             color: root.isLaptop && root.battery && root.battery.percentage < 20
-                ? "#ff5555"
-                : "white"
+                ? "#f472b6"
+                : "#ffffff"
         }
 
         Text {
@@ -52,9 +53,11 @@ Item {
 
             font.pixelSize: 14
             font.bold: true
+            font.family: "JetBrainsMono Nerd Font"
+            opacity: 0.8
             color: root.isLaptop && root.battery && root.battery.percentage < 20
-                ? "#ff5555"
-                : "white"
+                ? "#f472b6"
+                : "#ffffff"
         }
     }
 }
