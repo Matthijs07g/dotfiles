@@ -20,15 +20,7 @@ alias lt="eza --icons=always --tree"
 eval "$(starship init zsh)"
 
 # SSH
-if [ -f ~/.ssh/github ]; then
-    if ! pgrep -u $USER ssh-agent > /dev/null; then
-        ssh-agent > ~/.ssh/agent.env
-        chmod 600 ~/.ssh/agent.env
-    fi
-    if [ -f ~/.ssh/agent.env ]; then
-        . ~/.ssh/agent.env > /dev/null
-    fi
-    if ! ssh-add -l > /dev/null 2>&1; then
-        ssh-add ~/.ssh/github
-    fi
+if ! pgrep -u $USER ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh/agent.env
+    chmod 600 ~/.ssh/agent.env
 fi

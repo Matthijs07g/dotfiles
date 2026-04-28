@@ -5,6 +5,7 @@ import "./usage"
 import "./battery"
 import "./powermenu"
 import "./workspaces"
+import "./volume"
 
 Scope{
   Variants {
@@ -56,6 +57,7 @@ Scope{
         spacing: 20
 
         UsageWidget {}
+        VolumeWidget {}
         BatteryWidget {}
         ClockWidget {}
         PowerMenu {}
